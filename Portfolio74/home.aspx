@@ -1,60 +1,73 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="home.aspx.cs" Inherits="Portfolio74.home" %>
+﻿<%@ Page Title="Home" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="home.aspx.cs" Inherits="Portfolio74.home" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href ="styles.css?v=2" runat="server"/>
-    <script src="scripts.js" defer="defer"></script>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Ziadul Hasan's Profile</title>
-</head>
-<body>
-    <form id="form1" runat="server">
-            <nav class="navbar">
-                <div class="navbar-container">
-                    <a href="home.aspx" class ="navbar-title">Ziadul Hasan</a>
-                    <button type="button" class="navbar-toggle">
-                        <span class ="bar"></span>
-                        <span class ="bar"></span>
-                        <span class ="bar"></span>
+    <!-- Page-specific CSS/JS -->
+    <link rel="stylesheet" href="styles.css?v=2" runat="server"/>
+    <script src="scripts.js?v=2" defer="defer"></script>
+</asp:Content>
 
-                    </button>
-                    <ul class="navbar-menu">
-                        <li><a href="#" class="active">Home</a></li>
-                        <li><a href="#Projects" >Projects</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#Contact">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-        <section id="Projects">
-            <div class ="menu">
-                <div class="item">
-                    <h2>Project</h2>
-                    <p>This is a sample test project by me.</p>
-                </div>
-                <div class="item">
-                    <h2>Project</h2>
-                    <p>This is a sample test project by me.</p>
-                </div>
-                <div class="item">
-                    <h2>Project</h2>
-                    <p>This is a sample test project by me.</p>
-                </div>
-                <div class="item">
-                    <h2>Project</h2>
-                    <p>This is a sample test project by me.</p>
-                </div>
-                <div class="item">
-                    <h2>Project</h2>
-                    <p>This is a sample test project by me.</p>
-                </div>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <section id="Home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>This is a sample portfolio website created using ASP.NET Web Forms.</p>
+    </section>
+    <section id="Projects">
+        <div class="menu">
+            <div class="item">
+                <h2>Project</h2>
+                <p>This is a sample test project by me.</p>
             </div>
-        </section>
-        <section id="Contact">
-            <asp:Label ID="Label1" runat="server" Text="LabelWWWW">Hahahaha</asp:Label>
-        </section>
-    </form>
-</body>
-</html>
+            <div class="item">
+                <h2>Project</h2>
+                <p>This is a sample test project by me.</p>
+            </div>
+            <div class="item">
+                <h2>Project</h2>
+                <p>This is a sample test project by me.</p>
+            </div>
+            <div class="item">
+                <h2>Project</h2>
+                <p>This is a sample test project by me.</p>
+            </div>
+            <div class="item">
+                <h2>Project</h2>
+                <p>This is a sample test project by me.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Skills">
+        <asp:Label ID="Label1" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
+        <asp:Label ID="Label2" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
+        <asp:Label ID="Label3" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
+        <asp:Label ID="Label4" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
+        <asp:Label ID="Label5" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
+        <asp:Label ID="Label6" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
+        <asp:Label ID="Label7" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
+        <asp:Label ID="Label8" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
+        <asp:Label ID="Label9" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
+        <asp:Label ID="Label10" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
+        <asp:Label ID="Label11" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
+        <asp:Label ID="Label12" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
+        <asp:Label ID="Label13" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
+        <asp:Label ID="Label14" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
+    </section>
+    <section id="Contact">
+        <asp:Label ID="Label15" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
+        <asp:Label ID="Label16" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
+        <asp:Label ID="Label17" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
+        <asp:Label ID="Label18" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
+        <asp:Label ID="Label19" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
+        <asp:Label ID="Label20" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
+        <asp:Label ID="Label21" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
+        <asp:Label ID="Label22" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
+        <asp:Label ID="Label23" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
+        <asp:Label ID="Label24" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
+        <asp:Label ID="Label25" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
+        <asp:Label ID="Label26" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
+        <asp:Label ID="Label27" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
+        <asp:Label ID="Label28" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
+
+    </section>
+</asp:Content>
