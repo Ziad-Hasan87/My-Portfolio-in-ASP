@@ -8,10 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll("section[id]");
     const navLinks = document.querySelectorAll(".navbar-menu a");
     const navbar = document.querySelector(".navbar");
-    const navbarHeight = navbar.offsetHeight; // get navbar height dynamically
+    const navbarHeight = navbar.offsetHeight;
 
     function activateLinkOnScroll() {
-        let scrollY = window.pageYOffset;
+        let scrollY = window.scrollY;
 
         sections.forEach(section => {
             const sectionTop = section.offsetTop - navbarHeight - 10; 
@@ -27,14 +27,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     window.addEventListener("scroll", activateLinkOnScroll);
-    activateLinkOnScroll(); // run once on page load
+    activateLinkOnScroll();
 });
 document.addEventListener("DOMContentLoaded", function () {
     const backToTopButton = document.getElementById("backToTop");
-
-    // Show or hide button on scroll
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 300) {  // Show after scrolling 300px
+        if (window.scrollY > 300) {
             backToTopButton.style.display = "block";
         } else {
             backToTopButton.style.display = "none";

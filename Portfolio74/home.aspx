@@ -2,15 +2,22 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Ziadul Hasan's Profile</title>
-    <!-- Page-specific CSS/JS -->
-    <link rel="stylesheet" href="styles.css?v=2" runat="server"/>
+    <link rel="stylesheet" href="styles.css?v=5" runat="server"/>
     <script src="scripts.js?v=2" defer="defer"></script>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <section id="Home">
-        <h1>Welcome to My Portfolio</h1>
-        <p>This is a sample portfolio website created using ASP.NET Web Forms.</p>
+    <section id="Home" class="home-section">
+        <div class ="Home-left">
+            <img src="images/profile.jpg" alt="Ziadul Hasan" class="profile-pic"/>
+            <h1>Welcome to My Portfolio</h1>
+        </div>
+        <div class="Home-right">
+            <h1>Department of CSE</h1>
+            <p style="font-size:19px">Khulna University of Engineering and Technology</p>
+            <p style="font-size:17px">I am currently a student studying for my undergraduate degree. I have always loved technology and decided to pursue computer science in my university life. I had prior experience as a competitive programmer and also liked software development community.</p>
+            <p style="font-size:17px">Nowadays, I focus more on academics and honing my skills in what I learn. I recently worked on web development, Android app development, graphics design and some game development in Unity. Check out my profile on Github for more recent work updates.</p>
+        </div>
     </section>
     <section id="Projects">
         <div class="menu">
