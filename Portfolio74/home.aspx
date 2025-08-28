@@ -14,7 +14,7 @@
         </div>
         <div class="Home-right">
             <h1>Department of CSE</h1>
-            <p style="font-size:19px">Khulna University of Engineering and Technology</p>
+            <p style="font-size:19px; color:rgba(2, 211, 247, 1)"">Khulna University of Engineering and Technology</p>
             <p style="font-size:17px">I am currently a student studying for my undergraduate degree. I have always loved technology and decided to pursue computer science in my university life. I had prior experience as a competitive programmer and also liked software development community.</p>
             <p style="font-size:17px">Nowadays, I focus more on academics and honing my skills in what I learn. I recently worked on web development, Android app development, graphics design and some game development in Unity. Check out my profile on Github for more recent work updates.</p>
         </div>
@@ -45,20 +45,28 @@
     </section>
 
     <section id="Skills">
-        <asp:Label ID="Label1" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
-        <asp:Label ID="Label2" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
-        <asp:Label ID="Label3" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
-        <asp:Label ID="Label4" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
-        <asp:Label ID="Label5" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
-        <asp:Label ID="Label6" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
-        <asp:Label ID="Label7" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
-        <asp:Label ID="Label8" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
-        <asp:Label ID="Label9" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
-        <asp:Label ID="Label10" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
-        <asp:Label ID="Label11" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
-        <asp:Label ID="Label12" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
-        <asp:Label ID="Label13" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
-        <asp:Label ID="Label14" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
+        <div class="skills">
+            <div class="item">
+                <h2>Project</h2>
+                <p>This is a sample test project by me.</p>
+            </div>
+            <div class="item">
+                <h2>Project</h2>
+                <p>This is a sample test project by me.</p>
+            </div>
+            <div class="item">
+                <h2>Project</h2>
+                <p>This is a sample test project by me.</p>
+            </div>
+            <div class="item">
+                <h2>Project</h2>
+                <p>This is a sample test project by me.</p>
+            </div>
+            <div class="item">
+                <h2>Project</h2>
+                <p>This is a sample test project by me.</p>
+            </div>
+        </div>
     </section>
     <section id="Contact">
         <asp:Label ID="Label15" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
