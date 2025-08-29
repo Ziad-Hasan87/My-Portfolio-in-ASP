@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Ziadul Hasan's Profile</title>
-    <link rel="stylesheet" href="styles.css?v=6" runat="server"/>
+    <link rel="stylesheet" href="styles.css?v=7" runat="server"/>
     <script src="scripts.js?v=2" defer="defer"></script>
 </asp:Content>
 
@@ -47,29 +47,27 @@
     <section id="Skills">
         <div class="skills">
             <div class="item">
-                <h2>Project</h2>
-                <p>This is a sample test project by me.</p>
+                <h3>C/C++</h3>
             </div>
             <div class="item">
-                <h2>Project</h2>
-                <p>This is a sample test project by me.</p>
+                <h3>Java</h3>
             </div>
             <div class="item">
-                <h2>Project</h2>
-                <p>This is a sample test project by me.</p>
+                <h3>Graphics Design & Animation</h3>
             </div>
             <div class="item">
-                <h2>Project</h2>
-                <p>This is a sample test project by me.</p>
+                <h3>3D Render</h3>
             </div>
             <div class="item">
-                <h2>Project</h2>
-                <p>This is a sample test project by me.</p>
+                <h3>Game Development in Unity</h3>
+            </div>
+            <div class="item">
+                <h3>Web Development</h3>
             </div>
         </div>
     </section>
     <section id="Contact">
-        <div class="menu">
+        <div class="contactBox">
             <div class="item">
                 <h1 style="font-size:24px">Let’s build something brilliant</h1>
                 <p style="font-size:19px">Have an idea, a product, or a team that needs a developer with taste? I’d love to help.</p>
