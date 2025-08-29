@@ -32,6 +32,52 @@ section{
     width:100%;
     margin 0;
 }
+.emailButton {
+  text-decoration:none;
+  background: linear-gradient(90deg, #00c6ff, #7dffb2); /* Gradient */
+  border: none;
+  border-radius: 12px; /* Rounded corners */
+  padding: 12px 28px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.emailButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus/Active effect */
+.emailButton:active {
+  transform: scale(0.97);
+}
+.linkedInButton {
+  background: transparent; /* See-through background */
+  border: 1.5px solid rgba(255, 255, 255, 0.2); /* Light subtle border */
+  border-radius: 12px; /* Rounded corners */
+  padding: 12px 28px;
+  color: #ffffff; /* White text */
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.linkedInButton:hover {
+  background: rgba(255, 255, 255, 0.08); /* Slight background glow */
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Active effect */
+.linkedInButton:active {
+  transform: scale(0.97);
+}
+
 
 .profile-pic {
     width: 240px;
@@ -237,6 +283,47 @@ section{
     transform: translateZ(50px);
     background-color: #1B3141;
     border:solid 3px rgba(2, 211, 247, 1);
+}
+.site-footer {
+  background-color: #162530;
+  margin-top:2rem;
+  color: #ccc;               /* light gray text */
+  padding: 20px 40px;
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* subtle divider */
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* left + right side */
+  align-items: center;
+  flex-wrap: wrap; /* stack on small screens */
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.footer-right a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-right a:hover {
+  color: #fff;
+}
+
+.footer-right .dot {
+  color: #666;
 }
 
 @media (max-width:1200px) {

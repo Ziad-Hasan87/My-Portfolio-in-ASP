@@ -13,5 +13,9 @@ namespace Portfolio74
         {
 
         }
+        protected void RedirectLinkedIn(object sender, EventArgs e)
+        {
+            Response.Redirect("https://www.linkedin.com/in/ziadul-hasan-7ab52a346/");
+        }
     }
 }

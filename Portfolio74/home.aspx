@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Ziadul Hasan's Profile</title>
-    <link rel="stylesheet" href="styles.css?v=5" runat="server"/>
+    <link rel="stylesheet" href="styles.css?v=6" runat="server"/>
     <script src="scripts.js?v=2" defer="defer"></script>
 </asp:Content>
 
@@ -69,20 +69,13 @@
         </div>
     </section>
     <section id="Contact">
-        <asp:Label ID="Label15" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
-        <asp:Label ID="Label16" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
-        <asp:Label ID="Label17" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
-        <asp:Label ID="Label18" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
-        <asp:Label ID="Label19" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
-        <asp:Label ID="Label20" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
-        <asp:Label ID="Label21" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
-        <asp:Label ID="Label22" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
-        <asp:Label ID="Label23" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
-        <asp:Label ID="Label24" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
-        <asp:Label ID="Label25" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
-        <asp:Label ID="Label26" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
-        <asp:Label ID="Label27" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
-        <asp:Label ID="Label28" runat="server" Text="LabelWWWW">Hahahaha</asp:Label><br /><br /><br />
-
+        <div class="menu">
+            <div class="item">
+                <h1 style="font-size:24px">Let’s build something brilliant</h1>
+                <p style="font-size:19px">Have an idea, a product, or a team that needs a developer with taste? I’d love to help.</p>
+                <asp:HyperLink ID="emailLink" CssClass="emailButton" runat="server" NavigateUrl="mailto:ziadul87@gmail.com" Text="Email ziadul87@gmail.com" />
+                <asp:Button ID="linkedInButton" CssClass="linkedInButton" runat="server" Onclick="RedirectLinkedIn" Text="LinkedIn" />
+            </div>
+        </div>
     </section>
 </asp:Content>
