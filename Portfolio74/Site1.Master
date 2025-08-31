@@ -5,7 +5,7 @@
 <html>
 <head runat="server">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href ="styles.css?v=7" runat="server"/>
+    <link rel="stylesheet" href ="styles.css?v=8" runat="server"/>
     <script src="scripts.js?v=2" defer="defer"></script>
     <title>Ziadul Hasan's Profile</title>
     <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>

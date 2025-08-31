@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Ziadul Hasan's Profile</title>
-    <link rel="stylesheet" href="styles.css?v=7" runat="server"/>
+    <link rel="stylesheet" href="styles.css?v=8" runat="server"/>
     <script src="scripts.js?v=2" defer="defer"></script>
 </asp:Content>
 
@@ -21,27 +21,16 @@
     </section>
     <section id="Projects">
         <div class="menu">
-            <div class="item">
-                <h2>Project</h2>
-                <p>This is a sample test project by me.</p>
-            </div>
-            <div class="item">
-                <h2>Project</h2>
-                <p>This is a sample test project by me.</p>
-            </div>
-            <div class="item">
-                <h2>Project</h2>
-                <p>This is a sample test project by me.</p>
-            </div>
-            <div class="item">
-                <h2>Project</h2>
-                <p>This is a sample test project by me.</p>
-            </div>
-            <div class="item">
-                <h2>Project</h2>
-                <p>This is a sample test project by me.</p>
-            </div>
-        </div>
+            <asp:Repeater ID="ProjectsRepeater" runat="server">
+            <ItemTemplate>
+                <div class="item">
+                    <h1 class ="Project-title"><%# Eval("Title") %></h1>
+                    <p class ="Project-description"><%# Eval("Description") %></p>
+                    <a class="Project-link" href='<%# Eval("GitHub_Link") %>' target="_blank"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" class="github-logo">View on GitHub</a>
+                    <!--<img src='<%# Eval("ImageAddress") %>' alt='<%# Eval("Title") %>' />-->
+                </div>
+            </ItemTemplate>
+        </asp:Repeater>
     </section>
 
     <section id="Skills">
