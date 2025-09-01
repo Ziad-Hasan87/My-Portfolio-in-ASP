@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="home.aspx" />
+    <Content Include="login.aspx" />
     <Content Include="scripts.js" />
     <Content Include="styles.css" />
     <Content Include="updel.aspx" />
@@ -81,6 +82,13 @@
     </Compile>
     <Compile Include="home.aspx.designer.cs">
       <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="profile.master.cs">
       <DependentUpon>profile.master</DependentUpon>

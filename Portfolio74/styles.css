@@ -1,8 +1,15 @@
-﻿html, body, form {
+﻿html, body{
     margin: 0;
     height: 100%;
     background: #162530;
     scroll-behavior:smooth;
+    display:flex;
+    flex-direction:column;
+}
+form{
+    flex:1;
+    display:flex;
+    flex-direction:column;
 }
 section{
     scroll-margin-top:6rem;
@@ -346,9 +353,9 @@ section{
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between; /* left + right side */
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* stack on small screens */
+  flex-wrap: wrap;
 }
 
 .footer-left {
@@ -385,7 +392,34 @@ section{
     transition: 0.3s;
     border: solid 3px rgba(2, 211, 247, 0.4);
 }
+.Login-container {
+    display: flex;
+    flex-direction: column; /* stack items top to bottom */
+    justify-content: center; /* center vertically */
+    align-items: center; /* center horizontally */
 
+    position: absolute; /* so we can center on screen */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #0b1a33; /* very dark blue */
+    border-radius: 15px; /* rounded corners */
+    padding: 2rem; /* breathing space inside */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* subtle shadow */
+    min-width: 300px; /* make it not collapse */
+}
+.Login-container label {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    display: block;
+}
+.Maincontent{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 @media (max-width:1200px) {
     .navbar{
         position:sticky;
@@ -428,6 +462,7 @@ section{
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
 @media(max-width:480px){
     .navbar-container{
         padding:0 1rem;

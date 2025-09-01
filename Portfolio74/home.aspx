@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Ziadul Hasan's Profile</title>
-    <link rel="stylesheet" href="styles.css?v=8" runat="server"/>
+    <link rel="stylesheet" href="styles.css?v=9" runat="server"/>
     <script src="scripts.js?v=2" defer="defer"></script>
 </asp:Content>
 
