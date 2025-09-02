@@ -13,7 +13,16 @@ namespace Portfolio74
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                HttpCookie authCookie = Request.Cookies["AuthUser"];
+                if (authCookie != null && !string.IsNullOrEmpty(authCookie.Value))
+                {
+                    // Already logged in
+                    Response.Redirect("updel.aspx", false);
+                    Context.ApplicationInstance.CompleteRequest();
+                }
+            }
         }
         protected void LogIn(object sender, EventArgs args)
         {
@@ -35,9 +44,13 @@ namespace Portfolio74
 
                     if (userCount > 0)
                     {
-                        // Login successful
+                        HttpCookie authCookie = new HttpCookie("AuthUser");
+                        authCookie.Value = usernamebox.Text.Trim(); // You could also encrypt this
+                        authCookie.Expires = DateTime.Now.AddDays(3); // cookie valid for 7 days
+                        Response.Cookies.Add(authCookie);
                         Response.Redirect("updel.aspx", false);
                         Context.ApplicationInstance.CompleteRequest();
+
                     }
                     else
                     {
