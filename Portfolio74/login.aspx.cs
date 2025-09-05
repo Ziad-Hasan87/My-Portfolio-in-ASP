@@ -48,7 +48,7 @@ namespace Portfolio74
                         authCookie.Value = usernamebox.Text.Trim(); // You could also encrypt this
                         authCookie.Expires = DateTime.Now.AddDays(3); // cookie valid for 7 days
                         Response.Cookies.Add(authCookie);
-                        Response.Redirect("updel.aspx", false);
+                        Response.Redirect("projects.aspx", false);
                         Context.ApplicationInstance.CompleteRequest();
 
                     }

@@ -5,7 +5,7 @@
 <html>
 <head runat="server">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href ="styles.css?v=9" runat="server"/>
+    <link rel="stylesheet" href ="styles1.css?v=1" runat="server"/>
     <script src="scripts.js?v=2" defer="defer"></script>
     <title>My Profile</title>
     <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
@@ -16,7 +16,10 @@
             <div class="navbar-container">
                 <a href="home.aspx" class ="navbar-title">Ziadul Hasan</a>
                 <ul class="navbar-menu">
-                    <li><a href="login.aspx" class="active">Log in</a></li>
+                    <li>
+                        <asp:LinkButton ID="logoutLink" runat="server" CssClass="active2" 
+                            OnClick="LogOut">Logout</asp:LinkButton>
+                    </li>
                 </ul>
             </div>
         </nav>

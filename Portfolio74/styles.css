@@ -175,7 +175,18 @@ section{
 .navbar-container .navbar-menu li:hover a.active {
     color: white;
     background: transparent;
-    border: 2px solid transparent;
+    border: 2px solid white;
+}
+.navbar-container .navbar-menu li a.active2 {
+    color: ghostwhite !important;
+    background: #093657 !important;
+    border: 2px solid white !important;
+}
+
+.navbar-container .navbar-menu li:hover a.active2 {
+    color: white !important;
+    background: transparent !important;
+    border: 2px solid white !important;
 }
 .navbar-container .navbar-menu li:hover ~ li a,
 .navbar-container .navbar-menu li:has(~ li:hover) a{
@@ -265,6 +276,23 @@ section{
     background-color: #0E1322;
     border:solid 3px rgba(2, 211, 247, 0.6);
 }
+.Project-edit {
+    position: absolute;
+    bottom: 16px;
+    right: 3rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #24292e;
+    color: white;
+    transform: translateZ(0);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+}
 .Project-link {
     position: absolute;
     bottom: 16px;
@@ -339,6 +367,15 @@ section{
     transform: translateZ(50px);
     background-color: #1B3141;
     border:solid 3px rgba(2, 211, 247, 1);
+}
+.project-list{
+    width: 60%;
+    background:rgba(2, 211, 247, 0.6);
+    border-radius:1rem;
+    padding:1rem;
+}
+.input-field{
+    width:100%;
 }
 .site-footer {
   background-color: #162530;
@@ -425,7 +462,7 @@ section{
         position:sticky;
     }
     .navbar-container .navbar-menu {
-        display: none !important;
+        display: none;
         flex-direction: column;
         align-items: flex-start;
         gap: 1.7rem;

@@ -11,7 +11,34 @@ namespace Portfolio74
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                HttpCookie authCookie = Request.Cookies["AuthUser"];
+                if (authCookie != null && !string.IsNullOrEmpty(authCookie.Value))
+                {
+                    logoutLink.Text = "Log Out";
+                }
+                else
+                {
+                    logoutLink.Text = "Log In";
+                }
+            }
+        }
+        protected void LogOut(object sender, EventArgs args)
+        {
+            if (Request.Cookies["AuthUser"] != null)
+            {
+                HttpCookie authCookie = new HttpCookie("AuthUser");
+                authCookie.Expires = DateTime.Now.AddDays(-1); // Expire the cookie
+                Response.Cookies.Add(authCookie);
+                Response.Redirect("home.aspx", false);
+                Context.ApplicationInstance.CompleteRequest();
+            }
+            else
+            {
+                Response.Redirect("login.aspx", false);
+                Context.ApplicationInstance.CompleteRequest();
+            }
         }
     }
 }

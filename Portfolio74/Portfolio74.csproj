@@ -70,8 +70,10 @@
   <ItemGroup>
     <Content Include="home.aspx" />
     <Content Include="login.aspx" />
+    <Content Include="projects.aspx" />
     <Content Include="scripts.js" />
     <Content Include="styles.css" />
+    <Content Include="styles1.css" />
     <Content Include="updel.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -96,6 +98,13 @@
     </Compile>
     <Compile Include="profile.master.designer.cs">
       <DependentUpon>profile.master</DependentUpon>
+    </Compile>
+    <Compile Include="projects.aspx.cs">
+      <DependentUpon>projects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="projects.aspx.designer.cs">
+      <DependentUpon>projects.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">
