@@ -29,7 +29,7 @@ namespace Portfolio74
             if (Request.Cookies["AuthUser"] != null)
             {
                 HttpCookie authCookie = new HttpCookie("AuthUser");
-                authCookie.Expires = DateTime.Now.AddDays(-1); // Expire the cookie
+                authCookie.Expires = DateTime.Now.AddDays(-1);
                 Response.Cookies.Add(authCookie);
                 Response.Redirect("home.aspx", false);
                 Context.ApplicationInstance.CompleteRequest();

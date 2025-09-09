@@ -18,7 +18,6 @@ namespace Portfolio74
                 HttpCookie authCookie = Request.Cookies["AuthUser"];
                 if (authCookie != null && !string.IsNullOrEmpty(authCookie.Value))
                 {
-                    // Already logged in
                     Response.Redirect("updel.aspx", false);
                     Context.ApplicationInstance.CompleteRequest();
                 }
@@ -45,8 +44,8 @@ namespace Portfolio74
                     if (userCount > 0)
                     {
                         HttpCookie authCookie = new HttpCookie("AuthUser");
-                        authCookie.Value = usernamebox.Text.Trim(); // You could also encrypt this
-                        authCookie.Expires = DateTime.Now.AddDays(3); // cookie valid for 7 days
+                        authCookie.Value = usernamebox.Text.Trim();
+                        authCookie.Expires = DateTime.Now.AddDays(3);
                         Response.Cookies.Add(authCookie);
                         Response.Redirect("projects.aspx", false);
                         Context.ApplicationInstance.CompleteRequest();

@@ -41,9 +41,9 @@ section{
 }
 .emailButton {
   text-decoration:none;
-  background: linear-gradient(90deg, #00c6ff, #7dffb2); /* Gradient */
+  background: linear-gradient(90deg, #00c6ff, #7dffb2);
   border: none;
-  border-radius: 12px; /* Rounded corners */
+  border-radius: 12px;
   padding: 12px 28px;
   color: white;
   font-size: 16px;
@@ -52,35 +52,31 @@ section{
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Hover effect */
 .emailButton:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Focus/Active effect */
 .emailButton:active {
   transform: scale(0.97);
 }
 .linkedInButton {
-  background: transparent; /* See-through background */
-  border: 1.5px solid rgba(255, 255, 255, 0.2); /* Light subtle border */
-  border-radius: 12px; /* Rounded corners */
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
   padding: 12px 28px;
-  color: #ffffff; /* White text */
+  color: #ffffff;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-/* Hover effect */
 .linkedInButton:hover {
-  background: rgba(255, 255, 255, 0.08); /* Slight background glow */
+  background: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.4);
 }
 
-/* Active effect */
 .linkedInButton:active {
   transform: scale(0.97);
 }
@@ -325,7 +321,7 @@ section{
 .Project-description {
     font-size: 19px;
     line-height: 1.5;
-    max-height: 60px;
+    max-height: 50px;
     overflow: hidden;
     position: relative;
 }
@@ -380,10 +376,10 @@ section{
 .site-footer {
   background-color: #162530;
   margin-top:2rem;
-  color: #ccc;               /* light gray text */
+  color: #ccc;
   padding: 20px 40px;
   font-size: 14px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1); /* subtle divider */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-container {
@@ -431,19 +427,19 @@ section{
 }
 .Login-container {
     display: flex;
-    flex-direction: column; /* stack items top to bottom */
-    justify-content: center; /* center vertically */
-    align-items: center; /* center horizontally */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    position: absolute; /* so we can center on screen */
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #0b1a33; /* very dark blue */
-    border-radius: 15px; /* rounded corners */
-    padding: 2rem; /* breathing space inside */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* subtle shadow */
-    min-width: 300px; /* make it not collapse */
+    background: #0b1a33;
+    border-radius: 15px; 
+    padding: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    min-width: 300px;
 }
 .Login-container label {
     color: white;
@@ -500,7 +496,7 @@ section{
     }
 }
 
-@media(max-width:480px){
+@media(max-width:700px){
     .navbar-container{
         padding:0 1rem;
     }
@@ -511,4 +507,9 @@ section{
         font-size:1.2rem;
         padding: 3px 15px;
     }
+    .Project-title {
+        color: #0489af;
+        font-size: 1.8rem;
+    }
 }
+

@@ -18,7 +18,6 @@ namespace Portfolio74
                 {
                     loginLink.Text = authCookie.Value;
                     loginLink.NavigateUrl = "projects.aspx";
-                    // Already logged 
                 }
                 else
                 {

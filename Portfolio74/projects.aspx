@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/profile.master" AutoEventWireup="true" CodeBehind="projects.aspx.cs" Inherits="Portfolio74.projects" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Ziadul Hasan's Profile</title>
-    <link rel="stylesheet" href="styles1.css?v=1" runat="server"/>
+    <link rel="stylesheet" href="styles1.css?v=2" runat="server"/>
     <script src="scripts.js?v=2" defer="defer"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
